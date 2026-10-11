@@ -1,9 +1,9 @@
 """
 Generates ZDepth's UI assets (standard library only):
 
-  EmbeddedResources/ZDepth.ico    plug-in icon
+  resources/ZDepth.ico            plug-in icon
   dist/icon.png                   package icon
-  ZDepth.rui                      toolbar: ZDepth (right-click: ZDepthRange) and ZDepthCapture
+  resources/ZDepth.rui            toolbar: ZDepth (right-click: ZDepthRange) and ZDepthCapture
 
 Run from the repository root:  python3 tools/make_ui.py
 GUIDs are fixed so Rhino keeps the toolbar's position and visibility across updates.
@@ -218,11 +218,11 @@ def main():
         f.write(png(256, 256, big))
     sizes = [16, 24, 32, 48, 256]
     images = [(s, png(s, s, big if s == 256 else render(mode_icon, s))) for s in sizes]
-    with open(os.path.join(ROOT, 'EmbeddedResources', 'ZDepth.ico'), 'wb') as f:
+    with open(os.path.join(ROOT, 'resources', 'ZDepth.ico'), 'wb') as f:
         f.write(ico(images))
-    with open(os.path.join(ROOT, 'ZDepth.rui'), 'w', encoding='utf-8') as f:
+    with open(os.path.join(ROOT, 'resources', 'ZDepth.rui'), 'w', encoding='utf-8') as f:
         f.write(rui())
-    print('wrote dist/icon.png, EmbeddedResources/ZDepth.ico, ZDepth.rui')
+    print('wrote dist/icon.png, resources/ZDepth.ico, resources/ZDepth.rui')
 
 
 if __name__ == '__main__':
