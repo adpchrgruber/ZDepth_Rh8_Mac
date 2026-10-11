@@ -1,0 +1,18 @@
+name: ZDepth
+version: 0.9.0-beta
+authors:
+- adpchrgruber
+description: "Depth (z-buffer) pass for Rhino 8: a live Z Depth display mode and a capture command for 8-bit PNG at any size or exact 16-bit PNG / float EXR depth. Works on the Mac, where ShowZBuffer does not."
+url: https://github.com/adpchrgruber/ZDepth
+icon: icon.png
+keywords:
+- depth
+- zdepth
+- z-buffer
+- zbuffer
+- depth-map
+- controlnet
+- render
+- compositing
+- display-mode
+- mac

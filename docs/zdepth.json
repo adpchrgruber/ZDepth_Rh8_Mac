@@ -1,0 +1,23 @@
+{
+  "image": "zdepth.png",
+  "document": "test-scene.3dm",
+  "view": "Perspective",
+  "width": 960,
+  "height": 600,
+  "depth": "distance from the camera along the view direction",
+  "units": "Meters",
+  "range": "auto",
+  "near": 12.13396678730616,
+  "far": 26.20655743499865,
+  "visibleDepth": [12.142239570617676, 26.084991455078125],
+  "encoding": "grey = 255 * (far - depth) / (far - near), clamped",
+  "background": "0 (black)",
+  "camera": {
+    "projection": "perspective",
+    "location": [-3.077641996193498, -10.401303153511034, 6.72999734081858],
+    "direction": [0.5218255771450578, 0.7875102425661037, -0.32791109296683374],
+    "up": [0.181127172571199, 0.2733470911626216, 0.9447085874010547],
+    "lensLength": 50.00000000000008,
+    "frustum": {"left": -3.9827519370893776, "right": 3.9827519370893776, "bottom": -2.489219960680861, "top": 2.489219960680861, "near": 10.37174983617027}
+  }
+}

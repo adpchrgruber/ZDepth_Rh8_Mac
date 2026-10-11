@@ -1,0 +1,21 @@
+# Build output
+bin/
+obj/
+# Staging for the .yak (the .yak, manifest and icon in dist/ are committed)
+dist/net48/
+dist/net7.0/
+
+# IDE
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+
+# OS
+.DS_Store
+*.log
+
+# Rhino
+*.rhl
+*.3dmbak

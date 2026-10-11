@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RhinoUI major_ver="5" minor_ver="0" guid="6fd50dca-9fc2-4cce-96b4-15623f71bfeb" localize="False" default_language_id="1033" dpi_scale="100">
+  <extend_rhino_menus>
+    <menu guid="9f8945c3-ef96-4c8f-b62e-59f429aa0cb3">
+      <text>
+        <locale_1033>Extend Rhino Menus</locale_1033>
+      </text>
+    </menu>
+  </extend_rhino_menus>
+  <menus />
+  <tool_bar_groups>
+    <tool_bar_group guid="afaf8e51-712a-4a9d-8443-4d12c24f326e" dock_bar_guid64="5f6341be-1168-415e-8b27-ad7273a2059a" active_tool_bar_group="06e2c6c6-280a-406b-bee9-bbfb3d1620e9" single_file="True" hide_single_tab="True" point_floating="400,200">
+      <text>
+        <locale_1033>ZDepth</locale_1033>
+      </text>
+      <tool_bar_group_item guid="fc827b84-b49e-4c70-bdfa-1ed9e198ffd2" major_version="1" minor_version="1">
+        <text>
+          <locale_1033>ZDepth</locale_1033>
+        </text>
+        <tool_bar_id>06e2c6c6-280a-406b-bee9-bbfb3d1620e9</tool_bar_id>
+      </tool_bar_group_item>
+      <dock_bar_info dpi_scale="100" dock_bar="False" docking="True" horz="True" visible="True" floating="True" mru_float_style="8192" bar_id="59650" mru_width="100" point_pos="-2,-2" float_point="400,200" dock_location_u="59419" dock_location="top" float_size="90,46" />
+    </tool_bar_group>
+  </tool_bar_groups>
+  <tool_bars>
+    <tool_bar guid="06e2c6c6-280a-406b-bee9-bbfb3d1620e9" bitmap_id="f3e936d4-a1de-4a9a-8390-f40196ea4e9c">
+      <text>
+        <locale_1033>ZDepth</locale_1033>
+      </text>
+      <tool_bar_item guid="dc31e337-0f8f-4eaf-9e72-e9de09ac8e88">
+        <left_macro_id>6420923d-59d3-45e4-b9f5-8b50f995b552</left_macro_id>
+        <right_macro_id>490f5a7d-18e8-472f-86ed-4d1b8e3d411c</right_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="e9e207dc-3997-4d3e-babe-963b04530613">
+        <left_macro_id>c706c1f9-358a-4362-bb2f-ebba50791989</left_macro_id>
+      </tool_bar_item>
+    </tool_bar>
+  </tool_bars>
+  <macros>
+    <macro_item guid="6420923d-59d3-45e4-b9f5-8b50f995b552" bitmap_id="f3e936d4-a1de-4a9a-8390-f40196ea4e9c">
+      <text>
+        <locale_1033>Z Depth</locale_1033>
+      </text>
+      <tooltip>
+        <locale_1033>Switch the active viewport to Z Depth and back</locale_1033>
+      </tooltip>
+      <help_text>
+        <locale_1033>Switch the active viewport to Z Depth and back</locale_1033>
+      </help_text>
+      <button_text>
+        <locale_1033>Z Depth</locale_1033>
+      </button_text>
+      <menu_text>
+        <locale_1033>Z Depth</locale_1033>
+      </menu_text>
+      <script>! _ZDepth</script>
+    </macro_item>
+    <macro_item guid="c706c1f9-358a-4362-bb2f-ebba50791989" bitmap_id="852e9120-76a6-4cb5-a43c-b5e6f69fdde3">
+      <text>
+        <locale_1033>Z Depth Capture</locale_1033>
+      </text>
+      <tooltip>
+        <locale_1033>Save the active view as a depth map: PNG, 16-bit PNG or EXR, at any size</locale_1033>
+      </tooltip>
+      <help_text>
+        <locale_1033>Save the active view as a depth map: PNG, 16-bit PNG or EXR, at any size</locale_1033>
+      </help_text>
+      <button_text>
+        <locale_1033>Z Depth Capture</locale_1033>
+      </button_text>
+      <menu_text>
+        <locale_1033>Z Depth Capture</locale_1033>
+      </menu_text>
+      <script>! _ZDepthCapture</script>
+    </macro_item>
+    <macro_item guid="490f5a7d-18e8-472f-86ed-4d1b8e3d411c" bitmap_id="f3e936d4-a1de-4a9a-8390-f40196ea4e9c">
+      <text>
+        <locale_1033>Z Depth Range</locale_1033>
+      </text>
+      <tooltip>
+        <locale_1033>Set the depth range (auto or fixed near/far) and which end is white</locale_1033>
+      </tooltip>
+      <help_text>
+        <locale_1033>Set the depth range (auto or fixed near/far) and which end is white</locale_1033>
+      </help_text>
+      <button_text>
+        <locale_1033>Z Depth Range</locale_1033>
+      </button_text>
+      <menu_text>
+        <locale_1033>Z Depth Range</locale_1033>
+      </menu_text>
+      <script>! _ZDepthRange</script>
+    </macro_item>
+  </macros>
+  <bitmaps>
+    <small_bitmap item_width="16" item_height="16">
+      <bitmap_item guid="f3e936d4-a1de-4a9a-8390-f40196ea4e9c" index="0" />
+      <bitmap_item guid="852e9120-76a6-4cb5-a43c-b5e6f69fdde3" index="1" />
+      <bitmap>iVBORw0KGgoAAAANSUhEUgAAACAAAAAQCAYAAAB3AH1ZAAAB/UlEQVR42sWVTatBQRjHLZSF5CUW8gmUIq8LytbCQihKYqEows7dKFE2iFDIwjew9QFs7VhQXhbUWZB8g+d65jKdc49zubd7u1O/mub8n5n/POeZGZFIJBJfebvCXIEXYW4x4l+IJx34IRj7JpfLwe12UxwOB0+LY2wNxtziuc71ej1ks1mKTCZ7thMGJ2S33W7H0+IYu2HMLZ4rNJlMUC6XKQqF4mkm7gaGwyHEYjEIBAI8DY7hN9SwDADPgNlshmq1SvmOAVyAPYZIJBKOFjVfGrBarVCr1ShKpfKpAfy/mGL2ziuVCuHzBlCDWladcCez2WzQbDYpaADrwO/3E9Rq9UsF+o0NfHQ8Hg9ZIJ1OQ6fToRQKBZjP57DdbgmLxYJkSWhCrVYLFosF2u02IZlMwmQygdFoBBqNRtiA1+uFUCgEuVwO+v0+ZTabwX6/5zCdTgUNGAwGCIfDMBgMCJvNBg6HA6FUKgkb8Pl8EIlEIJ/PQ7fbpTAM8xCVSvXQgNFoJIWWSqUI6/UajscjoVgsChsIBoMQj8d5LJdLOJ1OHFarlWARYvox7XfwJI3HY+j1eiCVSoWLENOfSCR4NBoNOJ/PcLlcKNFoVPAY6nQ6sNvtHF46hpj+e9o+k8lkoF6vQ6vVApfL9esXEcMWPMLpdP7pVfzvj9G/Psfv+bpLck7kcrwAAAAASUVORK5CYII=</bitmap>
+    </small_bitmap>
+    <normal_bitmap item_width="24" item_height="24">
+      <bitmap_item guid="f3e936d4-a1de-4a9a-8390-f40196ea4e9c" index="0" />
+      <bitmap_item guid="852e9120-76a6-4cb5-a43c-b5e6f69fdde3" index="1" />
+      <bitmap>iVBORw0KGgoAAAANSUhEUgAAADAAAAAYCAYAAAC8/X7cAAACtUlEQVR42tWYzUsqURjGA2mjiArtItPUsE27aiutFEEEv4oKKyiHQGkrtQhCKURBTZQCNy5b9zdIhiBuIog+DEGIQv0H3tt7uE6TZ0ZHG++tgd9CxvOcec77+sw5jo19XswHNx/AN7n5q9V9jVT/UgLhbi7/lT4zAvEOTEffYDCA3++ncLlcguPxHt8Y1OLoC5c1GAxSTE5ODlpuoo8T812Pj4+C4/Ee34VaHH3hBzg6OqLQ6XRDVWNEBqCngePjYwopDAzbkgMbiEajFHq9XnID8/PzLOPj49IZODk5oZiZmZHcALdF1Wq1dAZisRjFsAYwUbCn+Xo+Eomw9DLQGd+VXMKTJhIJCk6EgVwuJ6mkVCq/Fbenp6csGo1m0PGfH/DhzGYzSzKZpFheXoaFhQVIpVJwd3cH9/f3hHw+D9PT00MZ4C4QGsCFWVxcBJPJNJgBm81GytPh7OyMIhQKwfX1NVtOLqVSSbQJrJzVaiWk02mW/f19qFar8PDwQMC2FW3AbreD1+tlyWazFFdXV1Cr1QS5uLgQZQDj2OfzEXK5HEulUoGXl5cvWCwWcQYcDgesrq6ynJ+fU+Cq1Ot1QZ6fn0kL9DOAYbC+vk6Ix+MsjUaDAqsiyoDT6WRFkUwmQ8E3QTdTU1N9DRiNRtja2qLANnx7e/vC0tKSOANCmycut7e38Pr6KsjT0xPIZLK+MTo7Owu7u7sUBwcHJBTa7Ta8v7/D4eGh+Bj1eDywvb3dk0KhQISFwDYQ8yLDlNvb2+MFU06r1YJKpRrsRbaysgI7Ozs9CQQC5IfWarUoisUiNamQAfze3NwcLxMTE8O9idfW1oBhmL7gKuG+COO02WxCuVyGcDgMCoXi/27mNjY2BMvaDbbAT9lOswcat9sNm5ubosAU+SkHml9/pPz1h/pf/bfKHyUhbai0wbjFAAAAAElFTkSuQmCC</bitmap>
+    </normal_bitmap>
+    <large_bitmap item_width="32" item_height="32">
+      <bitmap_item guid="f3e936d4-a1de-4a9a-8390-f40196ea4e9c" index="0" />
+      <bitmap_item guid="852e9120-76a6-4cb5-a43c-b5e6f69fdde3" index="1" />
+      <bitmap>iVBORw0KGgoAAAANSUhEUgAAAEAAAAAgCAYAAACinX6EAAAD4ElEQVR42u2Zyyt8YRjHTRaKkY3kktxWotzFAhslGeSSJLlL5LqQFXLPJcklMSsps9Cs2JDbxla5lCQpNDORJvkDnt88J07nPd733ObMIL9Tn8Wc3nme53zf93ne57zHx4e8TC52XDhdgM44P2ybfNjXt/k3urB4wCkLy4fPn+Lfq86FQfwI/6ZvcP6JSeg/Ly8PhoeHmfT09MjaxDFSNtCHyD+XF5JGy8vLoauri0p8fLw7AuwI/WOAUtf9/b2sTRwjdaEPkX/5glNfX89UNCkpyd3C5PxGAdC3fKANDQ0wMjJCJTk5WbeUEArgdDrh+PiYwGKxyNrAMeL/oS2GAKBIgKamJhgbG6OSkpLiEQEwcL3soi23BGhpaYGJiQkqqampXhUgKCiIwNfX1/MCtLa2wtTUFBVvCzA0NEQQFRXleQHa2tpgZmaGSlpamlcFGB0dJYiOjva8AO3t7TA3N0clPT1dNwFwD8cqjrAKnjgFY2JiFBXGT7uUXkI+sI6ODpifn6eSkZHh1eZpenqaIDY21l2b8oM6OzthYWGBSmZmJj8uPz8flpaW4ODgAE5OTmB9fR1KS0sVFSqliFdgXFycvgLk5uZCQUEBAebN4uIilebmZigpKYHt7W24u7ujsru7C8HBwZoCNBgM4O/vzyOegISEBAgLC4P+/n7Y2NjgVoXK3oS8UVhYCBUVFQTj4+OwvLxMBVfH/v4+n2MsDg8PuQdQKwD+RxiL2P/AwABcXFwQvm5vb7mxmgQoKiqCqqoqgsnJSVhdXaWyubkJDw8Piujr69MkgDAWsf/T01Oqr6urK6WCkzeKi4uhurqaAJfV2toalfPzc3h6elLE2dmZagECAgKgpqaGx2w2E6Bdm81GJTs7W70AWLSEDpHZ2dkvjj9BtVkB0MB8VStAXV0dT3d3N8Hj4yM8Pz9TUdijkDfKysqgtraWADu+lZUVKg6HQxWRkZGqBDAajdDY2Mhkb28PXl9fv3B5eQl+fn7qBcDiIVRcjuvra+YMiLHb7ZJB0RohFABbcRa9vb1wc3MDb29vPLjSsrKytDVClZWVkoqLsVqt1BmgsbW1pboVDgwM5DpRKTAOPLPAzhDTIiQkRHsrjJUW93al4AxgIcJ3bileXl4gMTFRkwC41UqBD6/buwBWfaklRwO3SVziwmUoBGcfhdXyMoSNEIogBaaJbgJg1ce3P7UMDg5yHR/O9vv7O8/R0ZHi94UfcSCCVV8u51iEh4dzhxQ5OTkc+Ps3HIkRh6JY2eVyjkVERMSvPBTdEe8CeAiqhdDQ0F95LP7nP4z8+U9j/z+O/uXP4/8A16dE3f8F8UkAAAAASUVORK5CYII=</bitmap>
+    </large_bitmap>
+  </bitmaps>
+  <scripts />
+</RhinoUI>
