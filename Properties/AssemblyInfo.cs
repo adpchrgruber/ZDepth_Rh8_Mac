@@ -12,7 +12,7 @@ using Rhino.PlugIns;
 [assembly: PlugInDescription(DescriptionType.Fax, "")]
 [assembly: PlugInDescription(DescriptionType.Organization, "")]
 [assembly: PlugInDescription(DescriptionType.UpdateUrl, "")]
-[assembly: PlugInDescription(DescriptionType.WebSite, "https://github.com/adpchrgruber/ZDepth")]
+[assembly: PlugInDescription(DescriptionType.WebSite, "https://github.com/adpchrgruber/ZDepth_Rh8_Mac")]
 
 // Icons should be Windows .ico files and contain 32-bit images in the following sizes: 16, 24, 32, 48, and 256.
 [assembly: PlugInDescription(DescriptionType.Icon, "ZDepth.ico")]

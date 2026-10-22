@@ -33,7 +33,9 @@ namespace ZDepth
             Conduit = new ZDepthConduit(mode.Id) { Enabled = true };
             RhinoDoc.DeleteRhinoObject += (s, e) => Conduit.Forget(e.TheObject.RuntimeSerialNumber);
             RhinoDoc.CloseDocument += (s, e) => Conduit.ForgetAll();
-            RhinoDoc.DocumentPropertiesChanged += (s, e) => Conduit.ForgetAll();
+            RhinoDoc.ModifyObjectAttributes += (s, e) => Conduit.Forget(e.RhinoObject.RuntimeSerialNumber); // per-object mesh settings
+            RhinoDoc.InstanceDefinitionTableEvent += (s, e) => Conduit.ForgetAll();     // block edits change instances
+            RhinoDoc.DocumentPropertiesChanged += (s, e) => Conduit.ForgetAll();        // render mesh quality
             return LoadReturnCode.Success;
         }
 

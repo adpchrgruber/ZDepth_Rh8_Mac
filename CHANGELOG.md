@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.9.1-beta — 2026-10-22
+
+- **SubD objects now appear**, in the view and in captures. Rhino draws SubDs from its own
+  display mesh and usually keeps no render mesh for them, so they were left out. ZDepth
+  now meshes them itself at the default display density, including SubDs inside blocks.
+- Kept meshes are also dropped when an object's mesh settings or a block definition
+  change.
+- Shorter package description; links point to the `ZDepth_Rh8_Mac` repository.
+- README: install from the Package Manager, credits and AI disclosure with citations;
+  `CITATION.cff` for citing ZDepth.
+
 ## 0.9.0-beta — 2026-10-11
 
 First public beta of **ZDepth**, a Rhino 8 plug-in that shows the depth pass (z-buffer)

@@ -53,7 +53,14 @@ namespace ZDepth
         static (float[], int[]) Triangulate(RhinoObject obj, MeshingParameters parameters)
         {
             var parts = obj.GetMeshes(MeshType.Render);
-            if ((parts == null || parts.Length == 0) && obj.IsMeshable(MeshType.Render))
+            if ((parts == null || parts.Length == 0) && obj.Geometry is SubD subd)
+            {
+                // Rhino draws SubDs from its own display mesh and often keeps no render
+                // mesh for them, so build one at the default display density.
+                var mesh = Mesh.CreateFromSubD(subd, (int)SubDDisplayParameters.Default().DisplayDensity(subd));
+                parts = mesh != null ? new[] { mesh } : null;
+            }
+            else if ((parts == null || parts.Length == 0) && obj.IsMeshable(MeshType.Render))
             {
                 obj.CreateMeshes(MeshType.Render, parameters, false);
                 parts = obj.GetMeshes(MeshType.Render);

@@ -16,12 +16,12 @@
 
   <PropertyGroup>
     <!-- Specifies information for Assembly and Yak -->
-    <Version>0.9.0-beta</Version>
+    <Version>0.9.1-beta</Version>
     <Title>ZDepth</Title>
     <Authors>adpchrgruber</Authors>
     <Company>adpchrgruber</Company>
-    <Description>Depth (z-buffer) pass for Rhino 8: a live Z Depth display mode and a capture command for 8-bit PNG at any size or exact 16-bit PNG / float EXR depth. Works on the Mac, where ShowZBuffer does not.</Description>
-    <RepositoryUrl>https://github.com/adpchrgruber/ZDepth</RepositoryUrl>
+    <Description>Shows the depth pass (z-buffer) live in the viewport and saves exact depth maps (PNG, 16-bit PNG, EXR) for compositing your renders. Works on the Mac, where ShowZBuffer does not.</Description>
+    <RepositoryUrl>https://github.com/adpchrgruber/ZDepth_Rh8_Mac</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
